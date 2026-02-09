@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  background: #000;
+  color: #fff;
+}
+
+/* TELEFON LIMIT */
+.hero {
+  min-height: 100vh;
+  max-width: 430px;
+  margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top, #2cff6a, #000 70%);
+  opacity: 0.25;
+}
+
+.wrap {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* RADIAL MENU */
+.radial {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  margin: 40px auto 0;
+}
+
+.center {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background: #2cff6a;
+  color: #000;
+  font-size: 28px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+
+.item {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 22px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.35s ease;
+}
+
+.radial.active .item {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* POSITIONS */
+.call  { top: 0; left: 82px; }
+.wa    { top: 40px; right: 0; }
+.ig    { bottom: 40px; right: 0; }
+.tt    { bottom: 0; left: 82px; }
+.order { bottom: 40px; left: 0; background:#2cff6a; }
+
+body
+
+
